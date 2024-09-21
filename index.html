@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .btn {
+            background-color: #FFFFFF;
+            border: none;
+            color: #000000;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        /* Style the image containers to be responsive */
+        .col-md-3 {
+            margin-bottom: 20px; /* Add some space between images */
+        }
+        .img-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .img-container img {
+            transition: transform 0.5s; /* Add a transition effect */
+        }
+        .img-container:hover img {
+            transform: scale(1.1); /* Make the image slightly larger on hover */
+        }
+        .img-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+            opacity: 0;
+            transition: opacity 0.5s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container:hover .overlay {
+            opacity: 1;
+        }
+        .overlay .btn {
+            background-color: #fff; /* White button background */
+            color: #000; /* Black button text */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Art Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="file:///C:/Users/Pc%20Planet/Desktop/web/index.html#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Pc%20Planet/Desktop/web/about.html#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Pc%20Planet/Desktop/web/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="display-3">Art Gallery</h1>
+        <p class="lead">Welcome to our art gallery!</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="img-container">
+                    <img src="download1.jfif" alt="Image 1" class="img-fluid">
+                    <div class="overlay">
+                        <div>
+                            <h2>Starry Nights</h2>
+                            <button type="button" class="btn">More About This</button>
+                            <br>
+                            <button type="button" class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container">
+                    <img src="download 2.jfif" alt="Image 2" class="img-fluid">
+                    <div class="overlay">
+                        <div>
+                            <h2>Image 2</h2>
+                            <button type="button" class="btn ">More About This</button>
+                            <br>
+                            <button type="button" class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container">
+                    <img src="download3.jfif" alt="Image 3" class="img-fluid">
+                    <div class="overlay">
+                        <div>
+                            <h2>Image 3</h2>
+                            <p>This is a description of image 3.</p>
+                            <button type="button" class="btn">More About This</button>
+                            <br>
+                            <button type="button" class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="img-container">
+                    <img src="download4.jfif" alt="Image 4" class="img-fluid">
+                    <div class="overlay">
+                        <div>
+                            <h2>Image 4</h2>
+                            <p>This is a description of image 4.</p>
+                            <button type="button" class="btn">More About This</button>
+                            <br>
+                            <button type="button" class="btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
